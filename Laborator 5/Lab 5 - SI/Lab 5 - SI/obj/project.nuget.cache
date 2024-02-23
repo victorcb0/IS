@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "4N+s+hW1aRXtm9Q+Q/z/60bAWSeS/hdk+lywqq/qe/tTwthC+2gTzEqzqVbp0+mv+MLQ6D5WcLzeTAjaLnTkIg==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\IS\\Laborator 5\\Lab 5 - SI\\Lab 5 - SI\\Lab 5 - SI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cioba\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\cioba\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\cioba\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\cioba\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

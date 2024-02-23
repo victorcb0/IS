@@ -1,0 +1,15 @@
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\bin\Debug\net6.0\Lab 5 - SI.exe
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\bin\Debug\net6.0\Lab 5 - SI.deps.json
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\bin\Debug\net6.0\Lab 5 - SI.runtimeconfig.json
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\bin\Debug\net6.0\Lab 5 - SI.dll
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\bin\Debug\net6.0\Lab 5 - SI.pdb
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.csproj.AssemblyReference.cache
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.AssemblyInfoInputs.cache
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.AssemblyInfo.cs
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.csproj.CoreCompileInputs.cache
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.dll
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\refint\Lab 5 - SI.dll
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.pdb
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\Lab 5 - SI.genruntimeconfig.cache
+D:\Universitate\Semestrul 1\Securitatea informației (SI)\Laborator\Laborator 5\Lab 5 - SI\Lab 5 - SI\obj\Debug\net6.0\ref\Lab 5 - SI.dll
