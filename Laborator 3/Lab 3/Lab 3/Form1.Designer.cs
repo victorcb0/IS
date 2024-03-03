@@ -28,52 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxMAC = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxKey = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxPlain = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxMAC = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxMACHEX = new System.Windows.Forms.TextBox();
+            this.buttonCompute = new System.Windows.Forms.Button();
+            this.buttonVerify = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxMAC
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Hash",
-            "HMAC"});
-            this.comboBox1.Location = new System.Drawing.Point(76, 38);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(161, 24);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(76, 123);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 33);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Compute MAC";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(76, 207);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 33);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Verify MAC";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.comboBoxMAC.FormattingEnabled = true;
+            this.comboBoxMAC.Items.AddRange(new object[] {
+            "SHA1",
+            "MD5",
+            "RIPEMD",
+            "SHA256",
+            "SHA384",
+            "SHA512"});
+            this.comboBoxMAC.Location = new System.Drawing.Point(76, 38);
+            this.comboBoxMAC.Name = "comboBoxMAC";
+            this.comboBoxMAC.Size = new System.Drawing.Size(161, 24);
+            this.comboBoxMAC.TabIndex = 0;
+            this.comboBoxMAC.Text = "SHA1";
             // 
             // label1
             // 
@@ -84,12 +69,13 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Key";
             // 
-            // textBox1
+            // textBoxKey
             // 
-            this.textBox1.Location = new System.Drawing.Point(356, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 22);
-            this.textBox1.TabIndex = 4;
+            this.textBoxKey.Location = new System.Drawing.Point(356, 38);
+            this.textBoxKey.Name = "textBoxKey";
+            this.textBoxKey.ReadOnly = true;
+            this.textBoxKey.Size = new System.Drawing.Size(195, 22);
+            this.textBoxKey.TabIndex = 4;
             // 
             // label2
             // 
@@ -109,12 +95,12 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "ASCII";
             // 
-            // textBox2
+            // textBoxPlain
             // 
-            this.textBox2.Location = new System.Drawing.Point(356, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 22);
-            this.textBox2.TabIndex = 7;
+            this.textBoxPlain.Location = new System.Drawing.Point(356, 123);
+            this.textBoxPlain.Name = "textBoxPlain";
+            this.textBoxPlain.Size = new System.Drawing.Size(195, 22);
+            this.textBoxPlain.TabIndex = 7;
             // 
             // label4
             // 
@@ -134,12 +120,13 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "ASCII";
             // 
-            // textBox3
+            // textBoxMAC
             // 
-            this.textBox3.Location = new System.Drawing.Point(356, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 22);
-            this.textBox3.TabIndex = 10;
+            this.textBoxMAC.Location = new System.Drawing.Point(356, 207);
+            this.textBoxMAC.Name = "textBoxMAC";
+            this.textBoxMAC.ReadOnly = true;
+            this.textBoxMAC.Size = new System.Drawing.Size(195, 22);
+            this.textBoxMAC.TabIndex = 10;
             // 
             // label6
             // 
@@ -159,32 +146,52 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "HEX";
             // 
-            // textBox4
+            // textBoxMACHEX
             // 
-            this.textBox4.Location = new System.Drawing.Point(356, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 22);
-            this.textBox4.TabIndex = 12;
+            this.textBoxMACHEX.Location = new System.Drawing.Point(356, 235);
+            this.textBoxMACHEX.Name = "textBoxMACHEX";
+            this.textBoxMACHEX.Size = new System.Drawing.Size(195, 22);
+            this.textBoxMACHEX.TabIndex = 12;
+            // 
+            // buttonCompute
+            // 
+            this.buttonCompute.Location = new System.Drawing.Point(76, 118);
+            this.buttonCompute.Name = "buttonCompute";
+            this.buttonCompute.Size = new System.Drawing.Size(161, 33);
+            this.buttonCompute.TabIndex = 14;
+            this.buttonCompute.Text = "Compute MAC";
+            this.buttonCompute.UseVisualStyleBackColor = true;
+            this.buttonCompute.Click += new System.EventHandler(this.buttonCompute_Click);
+            // 
+            // buttonVerify
+            // 
+            this.buttonVerify.Location = new System.Drawing.Point(76, 221);
+            this.buttonVerify.Name = "buttonVerify";
+            this.buttonVerify.Size = new System.Drawing.Size(161, 33);
+            this.buttonVerify.TabIndex = 15;
+            this.buttonVerify.Text = "Verify MAC";
+            this.buttonVerify.UseVisualStyleBackColor = true;
+            this.buttonVerify.Click += new System.EventHandler(this.buttonVerify_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonVerify);
+            this.Controls.Add(this.buttonCompute);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxMACHEX);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxMAC);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxPlain);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxKey);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxMAC);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -194,20 +201,20 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxMAC;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxKey;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxPlain;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxMAC;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxMACHEX;
+        private System.Windows.Forms.Button buttonCompute;
+        private System.Windows.Forms.Button buttonVerify;
     }
 }
 

@@ -69,7 +69,7 @@
             // 
             this.button_generate_key.Location = new System.Drawing.Point(33, 70);
             this.button_generate_key.Name = "button_generate_key";
-            this.button_generate_key.Size = new System.Drawing.Size(142, 36);
+            this.button_generate_key.Size = new System.Drawing.Size(155, 36);
             this.button_generate_key.TabIndex = 1;
             this.button_generate_key.Text = "Generate Key and IV";
             this.button_generate_key.UseVisualStyleBackColor = true;
@@ -79,6 +79,7 @@
             // 
             this.textBox_key.Location = new System.Drawing.Point(379, 31);
             this.textBox_key.Name = "textBox_key";
+            this.textBox_key.ReadOnly = true;
             this.textBox_key.Size = new System.Drawing.Size(285, 22);
             this.textBox_key.TabIndex = 2;
             // 
@@ -86,6 +87,7 @@
             // 
             this.textBox_IV.Location = new System.Drawing.Point(379, 77);
             this.textBox_IV.Name = "textBox_IV";
+            this.textBox_IV.ReadOnly = true;
             this.textBox_IV.Size = new System.Drawing.Size(285, 22);
             this.textBox_IV.TabIndex = 3;
             // 
